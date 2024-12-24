@@ -1,17 +1,16 @@
 {
-  "dependencies": {
-    "ethers": "^6.13.4",
-    "fs": "^0.0.1-security",
-    "solc": "^0.8.28"
-  },
-  "name": "disperse",
+  "name": "eth-tools",
   "version": "1.0.0",
-  "main": "compile.js",
+  "description": "ETH工具集",
+  "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node start.js",
+    "compile": "node src/scripts/compile.js",
+    "clean": "node src/scripts/clean.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "solc": "^0.8.0",
+    "chalk": "^4.1.2"
+  }
 }
